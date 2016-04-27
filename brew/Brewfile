@@ -72,22 +72,3 @@ brew sqlite
 brew tree
 brew wercker-cli
 brew xz
-
-# App Store applications
-appstore 443987910 1Password
-appstore 836505650 Battery Monitor
-appstore 425264550 Blackmagic Disk Speed Test
-appstore 411246225 Caffeine
-appstore 417602904 CloudApp
-appstore 975937182 Fantastical 2
-appstore 682658836 GarageBand
-appstore 668208984 GifGrabber
-appstore 1031444301 Hangouts Plus
-appstore 409183694 Keynote
-appstore 409203825 Numbers
-appstore 409201541 Pages
-appstore 568494494 Pocket
-appstore 803453959 Slack
-appstore 557168941 Tweetbot
-appstore 497799835 Xcode
-appstore 408981434 iMovie
