@@ -13,12 +13,12 @@ echo "---> Brew"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew tap Homebrew/bundle
-tap argon/mas
-tap caskroom/cask
-tap caskroom/versions
-tap codeclimate/formulae
-tap rcmdnk/file
-tap wercker/wercker
+brew tap argon/mas
+brew tap caskroom/cask
+brew tap caskroom/versions
+brew tap codeclimate/formulae
+brew tap rcmdnk/file
+brew tap wercker/wercker
 
 cd ~/.dotfiles/brew/ && brew bundle
 cd ~/.dotfiles/
