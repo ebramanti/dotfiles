@@ -1,1 +1,0 @@
-/Users/Edward/.config/fish/bass/functions/__bass.py

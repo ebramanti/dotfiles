@@ -1,1 +1,0 @@
-/Users/Edward/.config/fish/menu/menu.fish

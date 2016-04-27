@@ -58,7 +58,8 @@ echo "---> Node done"
 echo ""
 echo "---> Fish"
 mkdir -p ~/.config/
-ln -s ~/.dotfiles/fish ~/.config/fish
+ln -s ~/.dotfiles/fish/config.symlink/fish ~/.config/fish
+curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisherman
 # Fix for recursive symbolic link
 # See: http://unix.stackexchange.com/questions/84175/create-a-symbolic-link-relative-to-the-current-directory
 rm ~/.dotfiles/fish/fish
