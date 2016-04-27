@@ -1,1 +1,0 @@
-/Users/Edward/.config/fisherman/cache/bass/functions/bass.fish

@@ -1,0 +1,7 @@
+*
+!.gitignore
+!completions
+!conf.d
+!functions
+!config.fish
+!fishfile
