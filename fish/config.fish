@@ -14,3 +14,6 @@ status --is-interactive; and . (pyenv init -|psub)
 for file in ~/.config/fish/conf.d/*.fish
     source $file
 end
+
+# TODO: Figure out a better solution
+nvm use default > /dev/null
