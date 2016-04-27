@@ -11,7 +11,15 @@ echo "---> Preinstall done"
 echo ""
 echo "---> Brew"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
 brew tap Homebrew/bundle
+tap argon/mas
+tap caskroom/cask
+tap caskroom/versions
+tap codeclimate/formulae
+tap rcmdnk/file
+tap wercker/wercker
+
 cd ~/.dotfiles/brew/ && brew bundle
 cd ~/.dotfiles/
 echo "---> Brew done"
