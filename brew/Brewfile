@@ -20,6 +20,7 @@ cask dropbox
 cask flash-player
 cask flash
 cask google-chrome
+cask gitify
 cask java
 cask lighting
 cask macpar-deluxe
@@ -71,8 +72,6 @@ brew sqlite
 brew tree
 brew wercker-cli
 brew xz
-
-
 
 # App Store applications
 appstore 443987910 1Password
