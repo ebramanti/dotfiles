@@ -59,4 +59,7 @@ echo ""
 echo "---> Fish"
 mkdir -p ~/.config/
 ln -s ~/.dotfiles/fish ~/.config/fish
+# Fix for recursive symbolic link
+# See: http://unix.stackexchange.com/questions/84175/create-a-symbolic-link-relative-to-the-current-directory
+rm ~/.dotfiles/fish/fish
 echo "---> Fish done"
