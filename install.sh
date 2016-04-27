@@ -41,7 +41,7 @@ echo "---> Ruby done"
 
 echo ""
 echo "---> Python (pyenv)"
-bash ~/.dotfiles/ruby/rbenv/install.sh
+bash ~/.dotfiles/python/pyenv/install.sh
 echo "---> Ruby done"
 
 echo ""
