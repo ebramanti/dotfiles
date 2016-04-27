@@ -1,5 +1,7 @@
 import os
 
+source_nvm = '[ -s \"$NVM_DIR/nvm.sh\" ] && . \"$NVM_DIR/nvm.sh\"'
+
 packages = [
     'mocha',
     'gulp',
@@ -13,4 +15,4 @@ packages = [
     'kobrascript'
 ]
 
-os.system('npm install -g %s' % ' '.join(packages))
+os.system('%s && npm install -g %s' % (source_nvm, ' '.join(packages)))
