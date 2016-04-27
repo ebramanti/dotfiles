@@ -1,7 +1,7 @@
 *
 !.gitignore
-!completions
-!conf.d
-!functions
+!completions/*
+!conf.d/*
+!functions/*
 !config.fish
 !fishfile
