@@ -1,6 +1,6 @@
-set fisher_home ~/.local/share/fish
-set fisher_config ~/.config/fish
-source $fisher_home/config.fish
+set -gx OMF_PATH "/Users/Edward/.local/share/omf"
+set -gx OMF_CONFIG "/Users/Edward/.dotfiles/fish/omf"
+source $OMF_PATH/init.fish
 
 # rbenv
 set PATH $HOME/.rbenv/bin $PATH
@@ -9,11 +9,6 @@ set PATH $HOME/.rbenv/bin $PATH
 # pyenv
 set -x PATH "$HOME/.pyenv/bin" $PATH
 status --is-interactive; and . (pyenv init -|psub)
-
-# Fisherman fix for fish version < 2.3.0.
-for file in ~/.config/fish/conf.d/*.fish
-    source $file
-end
 
 # TODO: Figure out a better solution
 nvm use default > /dev/null
