@@ -2,6 +2,9 @@ set -gx OMF_PATH "/Users/Edward/.local/share/omf"
 set -gx OMF_CONFIG "/Users/Edward/.dotfiles/fish/omf"
 source $OMF_PATH/init.fish
 
+# gvm
+gvm use default > /dev/null
+
 # rbenv
 set PATH $HOME/.rbenv/bin $PATH
 status --is-interactive; and . (rbenv init -|psub)
