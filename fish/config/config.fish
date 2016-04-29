@@ -4,11 +4,12 @@ source $OMF_PATH/init.fish
 
 # rbenv
 set PATH $HOME/.rbenv/bin $PATH
-. (rbenv init -|psub)
+status --is-interactive; and . (rbenv init -|psub)
 
 # pyenv
 set -x PATH "$HOME/.pyenv/bin" $PATH
 status --is-interactive; and . (pyenv init -|psub)
 
-# TODO: Figure out a better solution
-nvm use default > /dev/null
+if status --is-interactive
+  nvm use default > /dev/null
+end
