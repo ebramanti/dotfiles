@@ -1,7 +1,5 @@
 # gvm
 gvm use default > /dev/null
-set -x GOPATH $HOME/go
-set -x PATH $HOME/go/bin $PATH
 
 # rbenv
 set PATH $HOME/.rbenv/bin $PATH
