@@ -1,3 +1,8 @@
+# Fisherman fix for fish 2.2.0
+for file in ~/.config/fish/conf.d/*.fish
+    source $file
+end
+
 # gvm
 gvm use default > /dev/null
 
