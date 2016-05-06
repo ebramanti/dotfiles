@@ -1,3 +1,3 @@
 Fish
 ====
-After a successful install, run `omf install` to restore oh-my-fish packages.
+After a successful install, run `fisher up` to restore Fisherman packages.

@@ -59,5 +59,5 @@ echo ""
 echo "---> Fish"
 mkdir -p ~/.config/
 ln -s ~/.dotfiles/fish/config ~/.config/fish
-git clone https://github.com/oh-my-fish/oh-my-fish.git ~/.local/share/omf
+curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisherman
 echo "---> Fish done"
