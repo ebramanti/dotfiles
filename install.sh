@@ -35,6 +35,11 @@ ln -s ~/.dotfiles/git/gitignore_global ~/.gitignore_global
 echo "---> Git done"
 
 echo ""
+echo "---> Bash"
+ln -s ~/.dotfiles/bash/.bashrc ~/.bashrc
+echo "---> Bash done"
+
+echo ""
 echo "---> Ruby (rbenv)"
 bash ~/.dotfiles/ruby/rbenv/install.sh
 echo "---> Ruby done"
