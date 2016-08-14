@@ -4,6 +4,9 @@ for file in ~/.config/fish/conf.d/*.fish
 end
 
 # gvm
+function gvm
+  bass source /Users/Edward/.gvm/scripts/gvm ';' gvm $argv
+end
 gvm use default > /dev/null
 
 # rbenv
