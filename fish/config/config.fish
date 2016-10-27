@@ -3,6 +3,9 @@ for file in ~/.config/fish/conf.d/*.fish
     source $file
 end
 
+# nvm
+nvm use 7
+
 # gvm
 function gvm
   bass source /Users/Edward/.gvm/scripts/gvm ';' gvm $argv
