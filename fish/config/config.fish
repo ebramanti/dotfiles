@@ -4,6 +4,10 @@ for file in ~/.config/fish/conf.d/*.fish
 end
 
 # nvm
+function use
+    nvm use (cat .nvmrc)
+end
+
 nvm use 7
 
 # gvm
