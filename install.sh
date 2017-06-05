@@ -64,5 +64,5 @@ echo ""
 echo "---> Fish"
 mkdir -p ~/.config/
 ln -s ~/.dotfiles/fish/config ~/.config/fish
-curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisherman
+curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisher
 echo "---> Fish done"
