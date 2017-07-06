@@ -47,12 +47,12 @@ echo "---> Ruby done"
 echo ""
 echo "---> Python (pyenv)"
 bash ~/.dotfiles/python/pyenv/install.sh
-echo "---> Ruby done"
+echo "---> Python done"
 
 echo ""
 echo "---> Go (gvm)"
 bash ~/.dotfiles/go/gvm.sh
-echo "---> Ruby done"
+echo "---> Go done"
 
 echo ""
 echo "---> Node"
