@@ -44,3 +44,10 @@ export GOROOT=$HOME/.gvm/gos/$(gvm alias list | grep -Eow 'go[0-9\.]+')
 export GOPATH=$HOME/.gvm/pkgsets/$(gvm alias list | grep -Eow 'go[0-9\.]+')/global
 export PATH=$PATH:$GOROOT/bin
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
+
+# Yarn
+export PATH="$HOME/.yarn/bin:$PATH"
+
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
