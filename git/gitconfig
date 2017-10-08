@@ -18,4 +18,8 @@
 	smudge = git lfs smudge %f
 	required = true
 [core]
-	editor = atom --wait
+	editor = code --wait
+[diff]
+    tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code --wait --diff $LOCAL $REMOTE
