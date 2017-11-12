@@ -19,6 +19,7 @@
 	required = true
 [core]
 	editor = code --wait
+	excludesfile = ~/.gitignore_global
 [diff]
     tool = default-difftool
 [difftool "default-difftool"]
