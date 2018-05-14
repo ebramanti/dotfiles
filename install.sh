@@ -47,7 +47,7 @@ echo "---> Python done"
 
 echo ""
 echo "---> Go (gvm)"
-bash ~/.dotfiles/go/gvm.sh
+bash ~/.dotfiles/go/goenv/install.sh
 echo "---> Go done"
 
 echo ""
