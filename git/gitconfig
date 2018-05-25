@@ -24,3 +24,14 @@
     tool = default-difftool
 [difftool "default-difftool"]
     cmd = code --wait --diff $LOCAL $REMOTE
+
+[url "git@github.com:"]
+        insteadOf = https://github.com/
+[url "git@github.com:"]
+        insteadOf = https://www.github.com/
+[url "git@github.com:"]
+        pushInsteadOf = "git://github.com/"
+[url "git@github.com:"]
+        pushInsteadOf = "https://github.com/"
+[url "git@github.com:"]
+        pushInsteadOf = "https://www.github.com/"
