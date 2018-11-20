@@ -12,8 +12,8 @@ ZSH_THEME="robbyrussell"
 
 # zsh-nvm settings
 # See https://github.com/lukechilds/zsh-nvm/issues/24#issuecomment-279633005
-# for NVM_NO_USE reasoning
-export NVM_NO_USE=true
+# for performance considerations
+if ! [ -f .nvmrc ]; then export NVM_LAZY_LOAD=true; fi
 export NVM_AUTO_USE=true
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
