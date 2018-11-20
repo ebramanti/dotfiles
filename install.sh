@@ -59,4 +59,5 @@ echo "---> Node done"
 echo ""
 echo "---> Zsh"
 ln -s ~/.dotfiles/zsh/.zshrc ~/.zshrc
+touch $HOME/local.zsh
 echo "---> Zsh done"
