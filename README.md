@@ -2,7 +2,10 @@
 A collection of dotfiles I use for my development environment.
 
 # Installation
+Before cloning this repo, [generate a new SSH key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/).
+
 ```sh
+git clone git@github.com:jadengore/dotfiles.git $HOME/.dotfiles
 bash install.sh
 ```
 
