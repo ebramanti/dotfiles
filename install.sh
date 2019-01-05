@@ -30,7 +30,7 @@ echo "---> Git done"
 
 echo ""
 echo "---> Bash"
-ln -s $DOTFILES/bash/.bashrc $HOME/.bashrc
+ln -sf $DOTFILES/bash/.bashrc $HOME/.bashrc
 echo "---> Bash done"
 
 echo ""
