@@ -1,3 +1,6 @@
+DOTFILES=$HOME/.dotfiles
+OHMYZSH=$HOME/.oh-my-zsh
+
 # Forked from: https://github.com/dvcrn/dotfiles/blob/master/install.sh
 echo "Installing your Dotfiles!"
 echo ""
@@ -11,13 +14,8 @@ echo "---> Preinstall done"
 echo ""
 echo "---> Brew"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-brew tap Homebrew/bundle
-brew tap caskroom/cask
-brew tap caskroom/versions
-
-cd ~/.dotfiles/brew/ && brew bundle
-cd ~/.dotfiles/
+brew tap homebrew/cask-versions
+brew bundle --file=$DOTFILES/brew/Brewfile
 echo "---> Brew done"
 
 echo "---> Post brew"
@@ -26,38 +24,44 @@ echo "---> Post brew done"
 
 echo ""
 echo "---> Git"
-ln -s ~/.dotfiles/git/gitconfig ~/.gitconfig
-ln -s ~/.dotfiles/git/gitignore_global ~/.gitignore_global
+ln -s $DOTFILES/git/gitconfig $HOME/.gitconfig
+ln -s $DOTFILES/git/gitignore_global $HOME/.gitignore_global
 echo "---> Git done"
 
 echo ""
 echo "---> Bash"
-ln -s ~/.dotfiles/bash/.bashrc ~/.bashrc
+ln -s $DOTFILES/bash/.bashrc $HOME/.bashrc
 echo "---> Bash done"
 
 echo ""
 echo "---> Ruby (rbenv)"
-bash ~/.dotfiles/ruby/rbenv/install.sh
+bash $DOTFILES/ruby/install.sh
 echo "---> Ruby done"
 
 echo ""
 echo "---> Python (pyenv)"
-bash ~/.dotfiles/python/pyenv/install.sh
+bash $DOTFILES/python/install.sh
 echo "---> Python done"
 
 echo ""
 echo "---> Go (gvm)"
-bash ~/.dotfiles/go/goenv/install.sh
+bash $DOTFILES/go/install.sh
 echo "---> Go done"
 
 echo ""
-echo "---> Node"
-bash ~/.dotfiles/node/nvm/install.sh
-python ~/.dotfiles/node/npm/install.py
+echo "---> Node (nvm)"
+bash $DOTFILES/node/install.sh
 echo "---> Node done"
 
 echo ""
 echo "---> Zsh"
-ln -s ~/.dotfiles/zsh/.zshrc ~/.zshrc
-touch $HOME/local.zsh
+ln -s $DOTFILES/zsh/.zshrc $HOME/.zshrc
+touch $DOTFILES/zsh/local.zsh
+ln -s $DOTFILES/zsh/local.zsh $HOME/local.zsh
 echo "---> Zsh done"
+
+echo ""
+echo "---> Post Zsh"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+git clone https://github.com/lukechilds/zsh-nvm $OHMYZSH/custom/plugins/zsh-nvm
+echo "---> Post Zsh done"
