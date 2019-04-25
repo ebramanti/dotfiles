@@ -16,6 +16,7 @@ echo "---> Brew"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew tap homebrew/cask-versions
 brew bundle --file=$DOTFILES/brew/Brewfile
+touch $DOTFILES/brew/local/Brewfile
 echo "---> Brew done"
 
 echo "---> Post brew"
