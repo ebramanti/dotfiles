@@ -60,5 +60,5 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 git clone https://github.com/lukechilds/zsh-nvm $OHMYZSH/custom/plugins/zsh-nvm
 ln -sf $DOTFILES/zsh/.zshrc $HOME/.zshrc
 touch $DOTFILES/zsh/local.zsh
-ln -s $DOTFILES/zsh/local.zsh $HOME/local.zsh
+ln -sf $DOTFILES/zsh/local.zsh $HOME/local.zsh
 echo "---> Zsh done"
