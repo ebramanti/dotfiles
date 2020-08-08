@@ -18,3 +18,6 @@ Necessary to meet 1Password requirement of browser being installed in `Applicati
 
 #### [Airbar](https://tiivik.github.io/)
 Not listed in Brew yet, used to switch between iOS and Mac for AirPods.
+
+#### [Postico 2 (Preview)](https://eggerapps.at/postico2/)
+No Brew cask for it yet, still in preview.
