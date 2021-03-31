@@ -1,0 +1,42 @@
+{
+  "entries": {
+    "cask": {
+      "battle-net": {
+        "version": null,
+        "options": {
+          "full_name": "battle-net"
+        }
+      },
+      "protonvpn": {
+        "version": null,
+        "options": {
+          "full_name": "protonvpn"
+        }
+      },
+      "steam": {
+        "version": "2021-02-05",
+        "options": {
+          "full_name": "steam"
+        }
+      },
+      "tresorit": {
+        "version": "3.5.1967.1350,1967",
+        "options": {
+          "full_name": "tresorit"
+        }
+      }
+    }
+  },
+  "system": {
+    "macos": {
+      "catalina": {
+        "HOMEBREW_VERSION": "3.0.0",
+        "HOMEBREW_PREFIX": "/usr/local",
+        "Homebrew/homebrew-core": "b67875008360ae6dacd8751d0e8f5aea448130a6",
+        "CLT": "12.0.32.28",
+        "Xcode": "12.4",
+        "macOS": "10.15.7"
+      }
+    }
+  }
+}
