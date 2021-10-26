@@ -37,4 +37,12 @@ export GOENV_ROOT="$HOME/.goenv"
 export PATH="$GOENV_ROOT/bin:$PATH"
 eval "$(goenv init -)"
 
+# Deno
+export DENO_ROOT="$HOME/.deno"
+export PATH="$DENO_ROOT/bin/deno:$PATH"
+
+# rustup
+export CARGO_ROOT="$HOME/.cargo"
+export PATH="$CARGO_ROOT/bin:$PATH"
+
 include "$HOME/local.zsh"
