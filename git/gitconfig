@@ -39,3 +39,5 @@
 
 [includeIf "gitdir:~/Dev/"]
         path = ~/Dev/.gitconfig
+[init]
+	defaultBranch = master
