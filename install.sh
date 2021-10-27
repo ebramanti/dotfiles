@@ -16,7 +16,7 @@ echo "---> Brew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 brew tap homebrew/cask-versions
 brew bundle --file=$DOTFILES/brew/Brewfile
-touch $DOTFILES/brew/local/Brewfile
+sudo touch $DOTFILES/brew/local/Brewfile
 echo "---> Brew done"
 
 echo "---> Post brew"

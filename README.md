@@ -4,14 +4,13 @@ A collection of dotfiles I use for my development environment.
 # Installation
 Before cloning this repo, [generate a new SSH key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/).
 
-_Note_: Root necessary for much of the install script, hence the `sudo`.
+_Note_: Root necessary for some of the install script, so pay attention for password requests.
 
 ```sh
 # Install Homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 git clone git@github.com:jadengore/dotfiles.git $HOME/.dotfiles
 cd $HOME/.dotfiles
-sudo bash install.sh
+bash install.sh
 ```
 
 ### Apps that must be installed manually
