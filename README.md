@@ -7,6 +7,8 @@ Before cloning this repo, [generate a new SSH key](https://help.github.com/artic
 _Note_: Root necessary for much of the install script, hence the `sudo`.
 
 ```sh
+# Install Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 git clone git@github.com:jadengore/dotfiles.git $HOME/.dotfiles
 cd $HOME/.dotfiles
 sudo bash install.sh
