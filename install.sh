@@ -14,13 +14,14 @@ echo "---> Preinstall done"
 echo ""
 echo "---> Brew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 brew tap homebrew/cask-versions
 brew bundle --file=$DOTFILES/brew/Brewfile
 sudo touch $DOTFILES/brew/local/Brewfile
 echo "---> Brew done"
 
 echo "---> Post brew"
-/usr/local/opt/fzf/install --all
+/opt/homebrew/opt/fzf/install --all
 echo "---> Post brew done"
 
 echo ""
