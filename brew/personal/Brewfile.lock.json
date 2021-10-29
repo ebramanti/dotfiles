@@ -2,19 +2,19 @@
   "entries": {
     "cask": {
       "battle-net": {
-        "version": null,
+        "version": "latest",
         "options": {
           "full_name": "battle-net"
         }
       },
       "protonvpn": {
-        "version": null,
+        "version": "2.2.1",
         "options": {
           "full_name": "protonvpn"
         }
       },
       "steam": {
-        "version": "2021-02-05",
+        "version": "4.0",
         "options": {
           "full_name": "steam"
         }
@@ -23,6 +23,12 @@
         "version": "3.5.1967.1350,1967",
         "options": {
           "full_name": "tresorit"
+        }
+      },
+      "protonmail-bridge": {
+        "version": "1.8.10",
+        "options": {
+          "full_name": "protonmail-bridge"
         }
       }
     }
@@ -36,6 +42,14 @@
         "CLT": "12.0.32.28",
         "Xcode": "12.4",
         "macOS": "10.15.7"
+      },
+      "monterey": {
+        "HOMEBREW_VERSION": "3.3.1",
+        "HOMEBREW_PREFIX": "/opt/homebrew",
+        "Homebrew/homebrew-core": "7861dca5257d1c05b90bbfeed0f5dba1ffeaf174",
+        "CLT": "13.1.0.0.1.1633545042",
+        "Xcode": "13.0",
+        "macOS": "12.0.1"
       }
     }
   }

@@ -54,8 +54,6 @@ cask "ngrok"
 cask "notion"
 # TODO: Add Postico 2 once out of Preview
 # cask "postico"
-cask "protonmail-bridge"
-cask "protonvpn"
 cask "rectangle"
 cask "rocket"
 cask "skype"
