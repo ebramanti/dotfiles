@@ -7,7 +7,7 @@ Before cloning this repo, [generate a new SSH key](https://help.github.com/artic
 _Note_: Root necessary for some of the install script, so pay attention for password requests.
 
 ```sh
-git clone git@github.com:jadengore/dotfiles.git $HOME/.dotfiles
+git clone git@github.com:ebramanti/dotfiles.git $HOME/.dotfiles
 cd $HOME/.dotfiles
 bash install.sh
 ```
