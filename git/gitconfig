@@ -7,6 +7,7 @@
         required = true
 [push]
         default = simple
+	autoSetupRemote = true
 [pull]
 	rebase = true
 [alias]
@@ -22,7 +23,7 @@
         required = true
 [core]
         editor = code --wait
-        excludesfile = ~/.gitignore_global
+	excludesfile = /Users/edward/.gitignore_global
 [diff]
         tool = default-difftool
 [difftool "default-difftool"]
@@ -41,5 +42,7 @@
 
 [includeIf "gitdir:~/Dev/"]
         path = ~/Dev/.gitconfig
+[includeIf "gitdir:~/Dev/Drip/"]
+        path = ~/Dev/Drip/.gitconfig
 [init]
 	defaultBranch = master
