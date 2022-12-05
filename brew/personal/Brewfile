@@ -1,5 +1,7 @@
 cask 'battle-net'
+cask 'folx'
 cask 'protonmail-bridge'
 cask 'protonvpn'
+cask 'nordvpn'
 cask 'steam'
 cask 'tresorit'
