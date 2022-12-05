@@ -17,7 +17,7 @@ echo "---> Brew"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 brew tap homebrew/cask-versions
 brew bundle --file=$DOTFILES/brew/Brewfile
-sudo touch $DOTFILES/brew/local/Brewfile
+touch $DOTFILES/brew/local/Brewfile
 echo "---> Brew done"
 
 echo "---> Post brew"
