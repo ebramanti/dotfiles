@@ -17,7 +17,7 @@ ZSH_THEME="robbyrussell"
 if ! [ -f .nvmrc ]; then export NVM_LAZY_LOAD=true; fi
 export NVM_AUTO_USE=true
 
-plugins=(git fzf zsh-nvm)
+plugins=(git fzf zsh-nvm yarn-extra-completion zsh-better-npm-completion)
 
 source $ZSH/oh-my-zsh.sh
 

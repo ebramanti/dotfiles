@@ -59,6 +59,8 @@ echo ""
 echo "---> Zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 git clone https://github.com/lukechilds/zsh-nvm $OHMYZSH/custom/plugins/zsh-nvm
+git clone https://github.com/lukechilds/zsh-better-npm-completion $OHMYZSH/custom/plugins/zsh-better-npm-completion
+git clone https://github.com/buonomo/yarn-extra-completion $OHMYZSH/custom/plugins/yarn-extra-completion
 ln -sf $DOTFILES/zsh/.zshrc $HOME/.zshrc
 ln -sf $DOTFILES/zsh/.zprofile $HOME/.zprofile
 touch $DOTFILES/zsh/local.zsh
