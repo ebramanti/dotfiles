@@ -46,4 +46,11 @@ export PATH="$DENO_ROOT/bin/deno:$PATH"
 export CARGO_ROOT="$HOME/.cargo"
 export PATH="$CARGO_ROOT/bin:$PATH"
 
+# bun
+export BUN_DIR="$HOME/.bunv"
+export PATH="$BUN_DIR/bin:$PATH"
+
 include "$HOME/local.zsh"
+
+# bun completions
+[ -s "/Users/edward/.bunv/versions/1.1.33/_bun" ] && source "/Users/edward/.bunv/versions/1.1.33/_bun"

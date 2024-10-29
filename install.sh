@@ -56,6 +56,11 @@ bash $DOTFILES/node/install.sh
 echo "---> Node done"
 
 echo ""
+echo "---> Bun (bunv)"
+bash $DOTFILES/bun/install.sh
+echo "---> Bun done"
+
+echo ""
 echo "---> Zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 git clone https://github.com/lukechilds/zsh-nvm $OHMYZSH/custom/plugins/zsh-nvm
