@@ -28,6 +28,7 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init --path)"
   eval "$(pyenv init -)"
 fi
+export VIRTUAL_ENV_DISABLE_PROMPT=true
 
 # Go
 export GOPATH=$HOME/go
@@ -49,6 +50,7 @@ export PATH="$CARGO_ROOT/bin:$PATH"
 # bun
 export BUN_DIR="$HOME/.bunv"
 export PATH="$BUN_DIR/bin:$PATH"
+# TODO: Add bun completions
 
 # deno
 export DVM_DIR="$HOME/.dvm"
@@ -56,6 +58,3 @@ export DENO_DIR="$HOME/.deno"
 export PATH="$DVM_DIR/bin:$DENO_DIR/bin:$PATH"
 
 include "$HOME/local.zsh"
-
-# bun completions
-[ -s "/Users/edward/.bunv/versions/1.1.33/_bun" ] && source "/Users/edward/.bunv/versions/1.1.33/_bun"
