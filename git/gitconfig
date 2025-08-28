@@ -22,12 +22,12 @@
         smudge = git lfs smudge %f
         required = true
 [core]
-        editor = code --wait
+        editor = cursor --wait
 	excludesfile = /Users/edward/.gitignore_global
 [diff]
         tool = default-difftool
 [difftool "default-difftool"]
-        cmd = code --wait --diff $LOCAL $REMOTE
+        cmd = cursor --wait --diff $LOCAL $REMOTE
 
 [url "git@github.com:"]
         insteadOf = https://github.com/
