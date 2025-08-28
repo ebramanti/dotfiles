@@ -61,6 +61,11 @@ bash $DOTFILES/bun/install.sh
 echo "---> Bun done"
 
 echo ""
+echo "---> Deno (dvm)"
+bash $DOTFILES/deno/install.sh
+echo "---> Deno done"
+
+echo ""
 echo "---> Zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 git clone https://github.com/lukechilds/zsh-nvm $OHMYZSH/custom/plugins/zsh-nvm

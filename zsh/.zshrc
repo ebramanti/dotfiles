@@ -50,6 +50,11 @@ export PATH="$CARGO_ROOT/bin:$PATH"
 export BUN_DIR="$HOME/.bunv"
 export PATH="$BUN_DIR/bin:$PATH"
 
+# deno
+export DVM_DIR="$HOME/.dvm"
+export DENO_DIR="$HOME/.deno"
+export PATH="$DVM_DIR/bin:$DENO_DIR/bin:$PATH"
+
 include "$HOME/local.zsh"
 
 # bun completions
