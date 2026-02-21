@@ -60,4 +60,9 @@ export DVM_DIR="$HOME/.dvm"
 export DENO_DIR="$HOME/.deno"
 export PATH="$DVM_DIR/bin:$DENO_DIR/bin:$PATH"
 
+# Ghostty shell integration
+if [[ -n "$GHOSTTY_RESOURCES_DIR" ]]; then
+  source "$GHOSTTY_RESOURCES_DIR/shell-integration/zsh/ghostty-integration"
+fi
+
 include "$HOME/local.zsh"

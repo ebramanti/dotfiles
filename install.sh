@@ -66,6 +66,12 @@ bash $DOTFILES/deno/install.sh
 echo "---> Deno done"
 
 echo ""
+echo "---> Ghostty"
+mkdir -p $HOME/.config/ghostty
+ln -sf $DOTFILES/ghostty/config $HOME/.config/ghostty/config
+echo "---> Ghostty done"
+
+echo ""
 echo "---> Zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 git clone https://github.com/lukechilds/zsh-nvm $OHMYZSH/custom/plugins/zsh-nvm

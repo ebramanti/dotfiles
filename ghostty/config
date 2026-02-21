@@ -1,0 +1,4 @@
+# Scrollback (~250MB — effectively unlimited for real workflows)
+# Max u32: 4294967295
+scrollback-limit = 250000000
+window-save-state = always
