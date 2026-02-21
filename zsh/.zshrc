@@ -21,6 +21,9 @@ plugins=(git fzf zsh-nvm yarn-extra-completion zsh-better-npm-completion)
 
 source $ZSH/oh-my-zsh.sh
 
+# local bin
+export PATH="$HOME/.local/bin:$PATH"
+
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
