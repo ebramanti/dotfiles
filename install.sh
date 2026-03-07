@@ -1,5 +1,4 @@
 DOTFILES=$HOME/.dotfiles
-OHMYZSH=$HOME/.oh-my-zsh
 
 # Forked from: https://github.com/dvcrn/dotfiles/blob/master/install.sh
 echo "Installing your Dotfiles!"
@@ -36,34 +35,23 @@ ln -sf $DOTFILES/bash/.bashrc $HOME/.bashrc
 echo "---> Bash done"
 
 echo ""
-echo "---> Ruby (rbenv)"
-bash $DOTFILES/ruby/install.sh
-echo "---> Ruby done"
-
-echo ""
-echo "---> Python (pyenv)"
-bash $DOTFILES/python/install.sh
-echo "---> Python done"
-
-echo ""
-echo "---> Go (gvm)"
-bash $DOTFILES/go/install.sh
-echo "---> Go done"
-
-echo ""
-echo "---> Node (nvm)"
-bash $DOTFILES/node/install.sh
-echo "---> Node done"
-
-echo ""
-echo "---> Bun (bunv)"
-bash $DOTFILES/bun/install.sh
-echo "---> Bun done"
-
-echo ""
-echo "---> Deno (dvm)"
-bash $DOTFILES/deno/install.sh
-echo "---> Deno done"
+echo "---> Mise"
+mkdir -p $HOME/.config/mise
+ln -sf $DOTFILES/mise/config.toml $HOME/.config/mise/config.toml
+mise trust $DOTFILES/mise/config.toml
+# Create local override if it doesn't exist
+if [ ! -f $DOTFILES/mise/local.toml ]; then
+  cat > $DOTFILES/mise/local.toml << 'EOF'
+# Pin specific tool versions for this machine.
+# These override the defaults in config.toml.
+# [tools]
+# node = "22.0.0"
+# python = "3.12.0"
+EOF
+fi
+ln -sf $DOTFILES/mise/local.toml $HOME/.config/mise/local.toml
+mise install
+echo "---> Mise done"
 
 echo ""
 echo "---> Ghostty"
@@ -74,9 +62,6 @@ echo "---> Ghostty done"
 echo ""
 echo "---> Zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-git clone https://github.com/lukechilds/zsh-nvm $OHMYZSH/custom/plugins/zsh-nvm
-git clone https://github.com/lukechilds/zsh-better-npm-completion $OHMYZSH/custom/plugins/zsh-better-npm-completion
-git clone https://github.com/buonomo/yarn-extra-completion $OHMYZSH/custom/plugins/yarn-extra-completion
 ln -sf $DOTFILES/zsh/.zshrc $HOME/.zshrc
 ln -sf $DOTFILES/zsh/.zprofile $HOME/.zprofile
 touch $DOTFILES/zsh/local.zsh

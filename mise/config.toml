@@ -1,0 +1,12 @@
+[tools]
+node = "latest"
+python = "latest"
+ruby = "latest"
+go = "latest"
+deno = "latest"
+bun = "latest"
+rust = "latest"
+
+[settings]
+node.corepack = true
+ruby.compile = false
