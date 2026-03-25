@@ -27,3 +27,6 @@ if [[ -n "$GHOSTTY_RESOURCES_DIR" ]]; then
 fi
 
 include "$HOME/local.zsh"
+
+# Herd CLI
+export PATH="/Users/edward/.herd/bin:$PATH"
