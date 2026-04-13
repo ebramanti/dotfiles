@@ -53,6 +53,22 @@ mise install
 echo "---> Mise done"
 
 echo ""
+echo "---> Claude"
+# Native installer (auto-updates after install)
+if ! command -v claude >/dev/null 2>&1; then
+  curl -fsSL https://claude.ai/install.sh | bash
+fi
+# Symlink shared config
+mkdir -p $HOME/.claude
+ln -sf $DOTFILES/claude/settings.json $HOME/.claude/settings.json
+# Create local override if it doesn't exist
+if [ ! -f $DOTFILES/claude/settings.local.json ]; then
+  echo '{}' > $DOTFILES/claude/settings.local.json
+fi
+ln -sf $DOTFILES/claude/settings.local.json $HOME/.claude/settings.local.json
+echo "---> Claude done"
+
+echo ""
 echo "---> Ghostty"
 mkdir -p $HOME/.config/ghostty
 ln -sf $DOTFILES/ghostty/config $HOME/.config/ghostty/config

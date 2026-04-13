@@ -1,0 +1,6 @@
+{
+  "skipDangerousModePermissionPrompt": true,
+  "enabledPlugins": {
+    "sentry@claude-plugins-official": true
+  }
+}
