@@ -22,7 +22,7 @@ export PATH="$HOME/.local/bin:$PATH"
 eval "$(mise activate zsh)"
 
 # Ghostty shell integration
-if [[ -n "$GHOSTTY_RESOURCES_DIR" ]]; then
+if [[ -n "$GHOSTTY_RESOURCES_DIR" && -f "$GHOSTTY_RESOURCES_DIR/shell-integration/zsh/ghostty-integration" ]]; then
   source "$GHOSTTY_RESOURCES_DIR/shell-integration/zsh/ghostty-integration"
 fi
 
