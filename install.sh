@@ -31,6 +31,7 @@ echo "---> Git done"
 echo ""
 echo "---> Bash"
 ln -sf $DOTFILES/bash/.bashrc $HOME/.bashrc
+ln -sf $DOTFILES/bash/.bash_profile $HOME/.bash_profile
 echo "---> Bash done"
 
 echo ""
